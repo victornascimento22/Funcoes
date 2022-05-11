@@ -25,9 +25,10 @@ namespace CalculadoraFuncoesComRetorno
                 {
                     case 1:
                         {
-                       
-                            respostaSoma = Soma(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
-                            
+                            int num1; num2;
+                            num1 = Convert.ToInt32(Console.ReadLine());
+                            num2 = Convert.ToInt32(Console.ReadLine())
+                            respostaSoma = Soma(num1, num2);                            
                             Console.WriteLine($"Resposta Soma : {respostaSoma}");
                         }
                         break;
