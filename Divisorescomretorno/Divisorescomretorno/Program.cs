@@ -6,24 +6,37 @@ namespace Divisorescomretorno
     {
         static void Main(string[] args)
         {
-            
-            int numeros = Convert.ToInt32(Console.ReadLine());
-            int divisores = Convert.ToInt32(Console.ReadLine());
 
-            Divisores(numeros, divisores);
+            int numero = Convert.ToInt32(Console.ReadLine());            
+            int[] retorno = Divisores(numero);
+
+            for(int i = 0; i < retorno.Length; i++)
+            {
+                if (retorno [i] == 0)
+                {
+
+                }else
+                {
+                    Console.WriteLine($"{retorno[i]}");
+                }
+            }
         }
 
 
-        static int Divisores(int numero, int divisores)
+
+        static int[] Divisores(int numero)
         {
-            for (int i = 1; i <= divisores; i++)
+            int[] vetor = new int[numero+1];
+
+            for (int i = 1; i <= numero; i++)
             {
                 if (numero % i == 0)
                 {
-                    Console.WriteLine($"Número : {numero} Divisor : {i},");
+                    vetor[i] = i;
+                    //Console.WriteLine($"Número : {numero} Divisor : {i},");
                 }
             }
-            return 0; 
+            return vetor;
         }
     }
 }
