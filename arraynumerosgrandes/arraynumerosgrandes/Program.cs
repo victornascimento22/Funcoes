@@ -30,7 +30,9 @@ namespace arraynumerosgrandes
             {
                 if (a[i] > maior)
                 {
+
                     maior = a[i];
+
                 }else if (a[i] == maior)
                 {
                     Console.WriteLine($"Números iguais {a[i]} , Indice {i}");
