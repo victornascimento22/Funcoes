@@ -70,7 +70,7 @@ namespace exer1Notas
                         {
 
 
-                        }else if (())
+                        }//else if (())
                         {
 
 
